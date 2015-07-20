@@ -1,9 +1,6 @@
 #!/bin/bash
 cp /etc/pacman.conf /etc/pacman.conf.back
 cp arch_extras/pacman.conf /etc
-cp /etc/make.conf /etc/make.conf.back
-cp arch_extras/make.conf /etc
-cp arch_extras/10-drives.rules /usr/share/polkit-1/rules.d
-cp arch_extras/10-disable-suspend.rules /usr/share/polkit-1/rules.d
+cp arch_extras/make.conf /etc/make.conf
 pacman -Syy
 pacman -S yaourt
