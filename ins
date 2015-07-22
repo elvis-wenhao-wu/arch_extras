@@ -1,6 +1,7 @@
 #!/bin/bash
 cp /etc/pacman.conf /etc/pacman.conf.back
 cp arch_extras/pacman.conf /etc
-cp arch_extras/make.conf /etc/make.conf
+cp /etc/makepkg /etc/makepkg.back
+cp arch_extras/makepkg.conf /etc/makepkg.conf
 pacman -Syy
 pacman -S yaourt
